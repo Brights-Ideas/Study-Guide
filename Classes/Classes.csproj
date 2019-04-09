@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -79,6 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AwfulTeaMaker.cs" />
+    <Compile Include="CockTail.cs" />
     <Compile Include="FairlyGoodTeaMaker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VeryPoshTeaMaker.cs" />

@@ -95,6 +95,8 @@ namespace FoodEquals
             int[] arr = { 256741038, 623958417, 467905213, 714532089, 938071625 };
             //plusMinus(arr);
             miniMaxSum(arr);
+
+            var total = divisorSum(6);
             Console.ReadLine();
             
         }
@@ -305,6 +307,21 @@ namespace FoodEquals
             var max = ar.Max();
             return ar.Count(c => c >= max);
 
+        }
+
+        static int divisorSum(int n)
+        {
+            //ArrayList total = new ArrayList();
+            int sum = 0;
+            for (int i = 1; i <= n; i++)
+            {
+                if (n % i == 0)
+                {
+                    sum = sum + i;
+                }
+            }
+
+            return sum;
         }
     }
 }
